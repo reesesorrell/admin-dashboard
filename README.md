@@ -1,1 +1,2 @@
-# admin-dashboard
+This project aims to create a generic dashboard page using html and css. It will implement grid, flex, and othe css methods
+to center and align various items correctly. It will also hopefully scale well at various page sizes.
