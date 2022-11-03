@@ -9,7 +9,7 @@ body {
     grid-template-rows: 1fr 4fr;
 }
 
-h3, p {
+h3, p, img {
     margin: 0;
 }
 
@@ -17,6 +17,7 @@ hr {
     color: #0b1841;
     border-color: #0b1841;
     border-width: .5px;
+    width: 100%;
 }
 
 button,
@@ -43,17 +44,26 @@ textarea {
     font-size: 20px;
     display: grid;
     grid-template-columns: 2fr 5fr;
-    margin-top: 10%;
+    align-items: center;
 }
 
 .tabs {
     display: grid;
     grid-template-columns: 2fr 5fr;
     grid-template-rows: repeat(6, 15%);
+    align-items: center;
 }
 
 .icon {
     justify-self: center;
+    width: 2vw;
+    height: 4vh;
+}
+
+.dashboard-icon {
+    justify-self: center;
+    width: 4vw;
+    height: 6vh;
 }
 
 .help {
@@ -67,7 +77,7 @@ textarea {
     background-color: #18254c;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1.5fr;
+    grid-template-rows: 1fr 1.3fr;
 }
 
 .search {
@@ -76,11 +86,11 @@ textarea {
 }
 
 .search-bar {
-    margin-top: 10px;
+    margin-top: 20px;
     align-self: center;
     border: 1px solid #3372a0;
     border-radius: 20px;
-    height: 25px;
+    height: 4vh;
     width: 80%;
     padding: 2px 23px 2px 30px;
     outline: 0;
@@ -89,9 +99,12 @@ textarea {
 }
 
 .search-icon {
-    margin-top: 10px;
+    margin-top: 20px;
     align-self: center;
     justify-self: center;
+    height: 70%;
+    width: 50%;
+    margin-left: 10px;
 }
 
 .profile {
@@ -103,11 +116,18 @@ textarea {
 .notification {
     margin-top: 10px;
     justify-self: end;
+    height: 40%;
+    width: 25%;
 }
 
 .profile-pic {
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     justify-self: center;
+    height: 2.6vw;
+    width: 2.6vw;
+    border-radius: 100px;
 }
 
 .name {
@@ -118,7 +138,7 @@ textarea {
 .welcome {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .welcome-message {
@@ -128,7 +148,6 @@ textarea {
 
 .name-2 {
     font-size: min(2.5vh, 1.5vw);
-    margin-top: 5px;
     align-self: flex-start;
 }
 
@@ -137,6 +156,9 @@ textarea {
     align-self: center;
     justify-self: end;
     margin-right: 15px;
+    height: 4.5vw;
+    width: 4.5vw;
+    border-radius: 100px;
 }
 
 .actions {
@@ -171,18 +193,18 @@ textarea {
 .projects {
     grid-row: 1/3;
     display: grid;
-    grid-template-rows: 1fr 3fr 3fr 3fr;
+    grid-template-rows: 1fr 4fr 4fr 4fr;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 .projects-title {
     grid-column: 1/3;
     align-self: end;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 5px;
 }
 
@@ -198,11 +220,13 @@ textarea {
 
 .article-icon {
     justify-self: end;
+    height: 3.5vh;
+    width: 2.3vw;
 }
 
 .announcements {
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
     gap: 15px;
     padding-right: 30px;
 }
@@ -211,39 +235,44 @@ textarea {
     background: rgb(22,194,196);
     background: linear-gradient(132deg, rgba(22,194,196,1) 0%, rgba(0,143,236,1) 100%);
     border-radius: 15px;
-    font-size: min(1.1vw, 3vh);
+    font-size: min(1vw, 3vh);
     color: #0b1841;
     padding: 10px;
+    padding-left: 18px;
+    display: grid;
+    grid-template-rows: 4fr 1fr 4fr;
+    align-items: center;
 }
 
 .announcements-title {
-    font-size: 14px;
+    font-size: 16px;
     align-self: end;
 }
 
 .trending {
     display: grid;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 7fr;
     gap: 15px;
     padding-right: 30px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 .trending-title {
     align-self: end;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .trending-section {
-    padding: 10px 18px 10px 10px;
     color: #0b1841;
     background: rgb(22,194,196);
     background: linear-gradient(132deg, rgba(22,194,196,1) 0%, rgba(0,143,236,1) 100%);
     border-radius: 15px;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(4, 1fr);
+    display: flex;
     align-items: center;
-    justify-items: center;
-    font-size: min(1.4vw, 3.5vh);;
+    justify-content: center;
+}
+
+.graph {
+    height: 80%;
+    width: 100%;
 }
